@@ -3,22 +3,20 @@ package com.Generic;
 public class Maximum {
 
 	 public static void main(String[] args) {
+		String p = "banana";
+		String q = "apple";
+		String r = "mango";
+		findMaximum(p,q,r);
+	 }
 
-		Float x = 2.5f;
-		Float y = 8.6f;
-		Float z = 7.9f;
-		findMaximum(x,y,z);
-
-	}
-
-	 private static void findMaximum(Float x, Float y, Float z) {
-		Float max = x;
-		if (y.compareTo(x)>0) {
-			max = y;
-	}
-		if (z.compareTo(max)>0) {
-			max = z;
-	}
+	 private static void findMaximum(String p, String q, String r) {
+		String max = p;
+		if (q.compareTo(p)>0) {
+			max = q;
+	 }
+		if (r.compareTo(max)>0) {
+			max = r;
+		}
 	 System.out.println("Maximum of numbers are " +max);
-
-	}
+	 }
+}
